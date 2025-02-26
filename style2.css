@@ -1,0 +1,106 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/414727/pexels-photo-414727.jpeg?cs=srgb&dl=pexels-pixabay-414727.jpg&fm=jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    background: transparent; /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Blur effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    animation: box 0.5s ease;
+}
+
+@keyframes box {
+    0%{
+        transform: scale(0.5);
+    }
+}
+
+.container a{
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+}
+
+
+.req input{
+    
+    background-color: transparent;
+    border: 1px rgb(255, 255, 255) solid;
+    padding: 12px 15px;
+    margin: 10px;
+    border-radius: 30px;
+    width:300px;
+    color: white;
+}
+
+.req button{
+    font-weight: bold;
+    margin: 25px;
+    padding: 12px 15px;
+    width: 330px;
+    color: white;
+    background-color: rgb(51, 0, 255);
+    border-radius: 30px;
+    border: none;
+    transition-duration: 0.5s;
+}
+
+.req button:hover{
+    background-color: white;
+    color:  black;
+}
+
+#moon{
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    animation-name: moon;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moon {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+#notice{
+    color: rgb(240, 240, 240);
+    animation-name: notice;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-size: small;
+    
+}
+
+@keyframes notice {
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+}
+
