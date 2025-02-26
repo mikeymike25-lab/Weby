@@ -1,0 +1,35 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-vector/starry-night-sky-wallpaper-perfect-combination-science-art_1017-43427.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    background-color: rgb(112, 59, 198);
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+}
+nav h2{
+    display: inline;
+    color: antiquewhite;
+    margin: 20px;
+}
+
+.links{
+    display: inline;
+    margin: 20px;
+
+}
+
+.links a{
+    margin: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
